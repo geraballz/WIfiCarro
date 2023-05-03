@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A3BA6516-A80E-46FF-92F9-9094F6D5BAB5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2635810-2B00-43B6-8D7E-17924B2925A8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wifiCarro/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "upViewAction(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C2635810-2B00-43B6-8D7E-17924B2925A8 - 585b7fad7c5efe13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wifiCarro.ViewController.upViewAction(sender: __C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "wifiCarro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gerardoherrera/Documents/xcodeProjects/wifiCarro/wifiCarro/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "920">
+               </Location>
+               <Location
+                  uuid = "C2635810-2B00-43B6-8D7E-17924B2925A8 - 585b7fad7c5efe13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wifiCarro.ViewController.upViewAction(sender: __C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "wifiCarro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gerardoherrera/Documents/xcodeProjects/wifiCarro/wifiCarro/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "688">
+               </Location>
+               <Location
+                  uuid = "C2635810-2B00-43B6-8D7E-17924B2925A8 - 585b7fad7c5efef6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wifiCarro.ViewController.upViewAction(sender: __C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "wifiCarro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gerardoherrera/Documents/xcodeProjects/wifiCarro/wifiCarro/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "824">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD2F1F7B-FF6E-44F9-B158-A4A661EB7E04"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wifiCarro/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "downViewAction(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
