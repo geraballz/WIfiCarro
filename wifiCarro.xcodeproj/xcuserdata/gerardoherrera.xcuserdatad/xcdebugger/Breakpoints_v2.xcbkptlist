@@ -14,8 +14,8 @@
             filePath = "wifiCarro/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "upViewAction(sender:)"
             landmarkType = "7">
             <Locations>
@@ -64,6 +64,51 @@
                   endingLineNumber = "116"
                   offsetFromSymbolStart = "824">
                </Location>
+               <Location
+                  uuid = "C2635810-2B00-43B6-8D7E-17924B2925A8 - 23d7b061883dce66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wifiCarro.ViewController.startAnimation() -&gt; ()"
+                  moduleName = "wifiCarro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gerardoherrera/Documents/xcodeProjects/WIfiCarro/wifiCarro/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "C2635810-2B00-43B6-8D7E-17924B2925A8 - be356206694b540d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in wifiCarro.ViewController.startAnimation() -&gt; ()"
+                  moduleName = "wifiCarro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gerardoherrera/Documents/xcodeProjects/WIfiCarro/wifiCarro/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "C2635810-2B00-43B6-8D7E-17924B2925A8 - 884933da5fc3ab92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wifiCarro.ViewController.upViewAction(sender: __C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "wifiCarro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gerardoherrera/Documents/xcodeProjects/WIfiCarro/wifiCarro/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "824">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -77,10 +122,42 @@
             filePath = "wifiCarro/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "downViewAction(sender:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AD2F1F7B-FF6E-44F9-B158-A4A661EB7E04 - 57956223c9effed7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wifiCarro.ViewController.setupAction() -&gt; ()"
+                  moduleName = "wifiCarro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gerardoherrera/Documents/xcodeProjects/WIfiCarro/wifiCarro/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "AD2F1F7B-FF6E-44F9-B158-A4A661EB7E04 - effa61ca508082ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wifiCarro.ViewController.downViewAction(sender: __C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "wifiCarro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gerardoherrera/Documents/xcodeProjects/WIfiCarro/wifiCarro/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "848">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Network
+import AudioToolbox
 
 class ViewController: UIViewController {
 
@@ -28,42 +28,14 @@ class ViewController: UIViewController {
     var timerDown: Timer?
     var timerLeft: Timer?
     var timerRight: Timer?
-    var connection: NWConnection?
-
-    func someFunc() {
-        
-        self.connection = NWConnection(host: "192.168.4.1", port: 8888, using: .udp)
-        "192.168.4.1"
-        "nc -u -lk 8080"
-        self.connection?.stateUpdateHandler = { (newState) in
-            switch (newState) {
-            case .ready:
-                print("ready")
-            case .setup:
-                print("setup")
-            case .cancelled:
-                print("cancelled")
-            case .preparing:
-                print("Preparing")
-            default:
-                print("waiting or failed")
-
-            }
-        }
-        self.connection?.start(queue: .global())
-
-    }
 
     func send(instruction: String, completion: @escaping()->()) {
-        self.connection?.send(content: instruction.data(using: String.Encoding.utf8), completion: NWConnection.SendCompletion.contentProcessed(({ (NWError) in
-            completion()
-        })))
+        UDPManager.shared.send(instruction: instruction, completion: completion)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAction()
-        someFunc()
     }
     
     override public var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -94,14 +66,6 @@ class ViewController: UIViewController {
         leftView.addAction(#selector(leftViewAction), target: self)
         rightView.addAction(#selector(rightViewAction), target: self)
         
-        /*
-        stopView.addAction(#selector(stopViewAction), target: self)
-        rightUpView.addAction(#selector(rightUpViewAction), target: self)
-        rightDownView.addAction(#selector(rightDownViewAction), target: self)
-        leftUpView.addAction(#selector(leftUpViewAction), target: self)
-        leftDownView.addAction(#selector(leftDownViewAction), target: self)
-        speakerView.addAction(#selector(speakerViewAction), target: self)
-         */
     }
     
     @objc func upViewAction(sender: UITapGestureRecognizer) {
@@ -160,83 +124,11 @@ class ViewController: UIViewController {
             timerRight = nil
         }
     }
-    /*
-    @objc func stopViewAction() {
-        guard !indicatorView.isAnimating else { return }
-        startAnimation()
-        stopView.isUserInteractionEnabled = false
-        stopView.showAnimation {
-            Utils().sendInstruction(instruction: "S") {
-                self.stopView.isUserInteractionEnabled = true
-                self.stopAnimation()
-            }
-        }
-    }
     
-    @objc func rightUpViewAction() {
-        guard !indicatorView.isAnimating else { return }
-        startAnimation()
-        rightUpView.isUserInteractionEnabled = false
-        rightUpView.showAnimation {
-            Utils().sendInstruction(instruction: "I") {
-                self.rightUpView.isUserInteractionEnabled = true
-                self.stopAnimation()
-            }
-        }
-    }
-    
-    @objc func rightDownViewAction() {
-        guard !indicatorView.isAnimating else { return }
-        startAnimation()
-        rightDownView.isUserInteractionEnabled = false
-        rightDownView.showAnimation {
-            Utils().sendInstruction(instruction: "J") {
-                self.rightDownView.isUserInteractionEnabled = true
-                self.stopAnimation()
-            }
-        }
-    }
-    
-    @objc func leftUpViewAction() {
-        guard !indicatorView.isAnimating else { return }
-        startAnimation()
-        leftUpView.isUserInteractionEnabled = false
-        leftUpView.showAnimation {
-            Utils().sendInstruction(instruction: "G") {
-                self.leftUpView.isUserInteractionEnabled = true
-                self.stopAnimation()
-            }
-        }
-    }
-    
-    @objc func leftDownViewAction() {
-        guard !indicatorView.isAnimating else { return }
-        startAnimation()
-        leftDownView.isUserInteractionEnabled = false
-        leftDownView.showAnimation {
-            Utils().sendInstruction(instruction: "H") {
-                self.leftDownView.isUserInteractionEnabled = true
-                self.stopAnimation()
-            }
-        }
-    }
-    
-    @objc func speakerViewAction() {
-        guard !indicatorView.isAnimating else { return }
-        startAnimation()
-        let value = speaker ? "V" : "v"
-        speakerView.isUserInteractionEnabled = false
-        speakerView.showAnimation {
-            Utils().sendInstruction(instruction: value) {
-                self.speakerView.isUserInteractionEnabled = true
-                self.stopAnimation()
-            }
-        }
-    }
-    */
     @IBAction func speedAction(_ sender: UISlider) {
         let value = Int(sender.value)
         self.send(instruction: String(value)) { }
+        AudioServicesPlayAlertSound(SystemSoundID(1520))
     }
     
     @IBAction func frontLight(_ sender: UISwitch) {

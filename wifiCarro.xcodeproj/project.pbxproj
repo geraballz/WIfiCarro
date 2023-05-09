@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F09ADFF2A09EB2A00BABD63 /* UDPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09ADFE2A09EB2A00BABD63 /* UDPManager.swift */; };
 		1F5FEAB4288BAF1300D8C2B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5FEAB3288BAF1300D8C2B2 /* AppDelegate.swift */; };
 		1F5FEAB6288BAF1300D8C2B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5FEAB5288BAF1300D8C2B2 /* SceneDelegate.swift */; };
 		1F5FEAB8288BAF1300D8C2B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5FEAB7288BAF1300D8C2B2 /* ViewController.swift */; };
@@ -14,12 +15,12 @@
 		1F5FEABD288BAF1400D8C2B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5FEABC288BAF1400D8C2B2 /* Assets.xcassets */; };
 		1F5FEAC0288BAF1400D8C2B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5FEABE288BAF1400D8C2B2 /* LaunchScreen.storyboard */; };
 		1F99684A288DCBB5008A1DB6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F996849288DCBB5008A1DB6 /* UIView+Extension.swift */; };
-		1FDCAE5A288CF7A800C9CE7C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1FDCAE59288CF7A800C9CE7C /* Alamofire */; };
 		1FDCAE5C288CFFDF00C9CE7C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDCAE5B288CFFDF00C9CE7C /* Utils.swift */; };
 		1FF748FC2A02AB3E006B25D6 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF748FB2A02AB3E006B25D6 /* Slider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F09ADFE2A09EB2A00BABD63 /* UDPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPManager.swift; sourceTree = "<group>"; };
 		1F5FEAB0288BAF1300D8C2B2 /* wifiCarro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wifiCarro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5FEAB3288BAF1300D8C2B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F5FEAB5288BAF1300D8C2B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FDCAE5A288CF7A800C9CE7C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +70,7 @@
 				1F996849288DCBB5008A1DB6 /* UIView+Extension.swift */,
 				1FF748FB2A02AB3E006B25D6 /* Slider.swift */,
 				1FDCAE5B288CFFDF00C9CE7C /* Utils.swift */,
+				1F09ADFE2A09EB2A00BABD63 /* UDPManager.swift */,
 				1F5FEAB9288BAF1300D8C2B2 /* Main.storyboard */,
 				1F5FEABC288BAF1400D8C2B2 /* Assets.xcassets */,
 				1F5FEABE288BAF1400D8C2B2 /* LaunchScreen.storyboard */,
@@ -95,7 +96,6 @@
 			);
 			name = wifiCarro;
 			packageProductDependencies = (
-				1FDCAE59288CF7A800C9CE7C /* Alamofire */,
 			);
 			productName = wifiCarro;
 			productReference = 1F5FEAB0288BAF1300D8C2B2 /* wifiCarro.app */;
@@ -126,7 +126,6 @@
 			);
 			mainGroup = 1F5FEAA7288BAF1300D8C2B2;
 			packageReferences = (
-				1FDCAE58288CF7A800C9CE7C /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 1F5FEAB1288BAF1300D8C2B2 /* Products */;
 			projectDirPath = "";
@@ -160,6 +159,7 @@
 				1F5FEAB6288BAF1300D8C2B2 /* SceneDelegate.swift in Sources */,
 				1F99684A288DCBB5008A1DB6 /* UIView+Extension.swift in Sources */,
 				1FF748FC2A02AB3E006B25D6 /* Slider.swift in Sources */,
+				1F09ADFF2A09EB2A00BABD63 /* UDPManager.swift in Sources */,
 				1FDCAE5C288CFFDF00C9CE7C /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,25 +380,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1FDCAE58288CF7A800C9CE7C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1FDCAE59288CF7A800C9CE7C /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1FDCAE58288CF7A800C9CE7C /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F5FEAA8288BAF1300D8C2B2 /* Project object */;
 }
